@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Campaign Journal — Support</title>
+<style>
+  :root {
+    --red: #8e332e;
+    --red-dark: #742723;
+    --paper: #fcf3e4;
+    --ink: #1f1b19;
+    --muted: #5d534d;
+    --rule: #e2d8c6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #17130f;
+      --ink: #f0e7d8;
+      --muted: #a89a8c;
+      --rule: #322a22;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  header {
+    background: var(--red);
+    color: var(--paper);
+    padding: 56px 16px 48px;
+    text-align: center;
+  }
+  header h1 { margin: 0 0 8px; font-size: 32px; letter-spacing: -0.02em; }
+  header p { margin: 0; opacity: 0.85; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 16px 72px; }
+  h2 { font-size: 22px; margin: 40px 0 12px; }
+  h2:first-child { margin-top: 0; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  a { color: var(--red); }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) a { color: #e0a2a2; }
+  }
+  .note {
+    border-left: 3px solid var(--red);
+    padding: 2px 0 2px 16px;
+    color: var(--muted);
+  }
+  footer {
+    border-top: 1px solid var(--rule);
+    margin-top: 56px;
+    padding-top: 20px;
+    color: var(--muted);
+    font-size: 15px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>My Campaign Journal</h1>
+  <p>Support and privacy</p>
+</header>
+
+<main>
+  <h2>Support</h2>
+  <p>
+    Questions, bugs or ideas are welcome. Write to
+    <a href="mailto:vasialeleka@ukr.net">vasialeleka@ukr.net</a>
+    and include your iPad or iPhone model and the app version (it is shown in Settings → My Campaign Journal).
+  </p>
+
+  <h2>Common questions</h2>
+  <ul>
+    <li><strong>Where are my notes stored?</strong> On your device only, inside the app. They are included in your device backup if you use iCloud Backup or back up to a computer.</li>
+    <li><strong>Can I write without an Apple Pencil?</strong> Yes. Open the <strong>•••</strong> menu and turn on <strong>Draw with Finger</strong>.</li>
+    <li><strong>How do I add a character sheet?</strong> Open the character menu in the top bar, choose <strong>New Character</strong>, and import any PDF.</li>
+    <li><strong>Does it need an internet connection?</strong> No. The app makes no network requests at all.</li>
+  </ul>
+
+  <h2>Privacy Policy</h2>
+  <p>
+    My Campaign Journal does not collect, store or share any personal data.
+  </p>
+  <p>
+    All notes, drawings, images and PDF files you create or import stay on your device
+    (and in your device backups, if you use them). The app has no accounts, no analytics,
+    no advertising, and makes no network connections. Nothing you write is sent anywhere.
+  </p>
+  <p class="note">
+    Because no data leaves your device, there is nothing for us to access, correct or delete
+    on your behalf. Removing the app removes its data with it, so export anything you want to keep first.
+  </p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:vasialeleka@ukr.net">vasialeleka@ukr.net</a></p>
+
+  <footer>
+    My Campaign Journal is an independent app and is not affiliated with or endorsed by any game publisher.
+  </footer>
+</main>
+</body>
+</html>
