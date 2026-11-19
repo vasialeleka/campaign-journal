@@ -4,126 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>My Campaign Journal — Support</title>
-<style>
-  :root {
-    --red: #8e332e;
-    --red-dark: #742723;
-    --paper: #fcf3e4;
-    --card: #fffaf0;
-    --ink: #1f1b19;
-    --muted: #5d534d;
-    --rule: #e2d8c6;
-    --field: #ffffff;
-    --ok: #1d6b3f;
-    --bad: #a12a22;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --paper: #17130f;
-      --card: #211a15;
-      --ink: #f0e7d8;
-      --muted: #a89a8c;
-      --rule: #322a22;
-      --field: #120f0c;
-      --ok: #6fc28f;
-      --bad: #e58a80;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-  }
-  header {
-    background: var(--red);
-    color: var(--paper);
-    padding: 56px 16px 48px;
-    text-align: center;
-  }
-  header h1 { margin: 0 0 8px; font-size: 32px; letter-spacing: -0.02em; }
-  header p { margin: 0; opacity: 0.85; }
-  main { max-width: 680px; margin: 0 auto; padding: 40px 16px 72px; }
-  h2 { font-size: 22px; margin: 40px 0 12px; }
-  h2:first-child { margin-top: 0; }
-  ul { padding-left: 20px; }
-  li { margin: 6px 0; }
-  a { color: var(--red); }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) a { color: #e0a2a2; }
-  }
-  .note {
-    border-left: 3px solid var(--red);
-    padding: 2px 0 2px 16px;
-    color: var(--muted);
-  }
-
-  form {
-    background: var(--card);
-    border: 1px solid var(--rule);
-    border-radius: 14px;
-    padding: 20px;
-    margin-top: 16px;
-  }
-  .row { margin-bottom: 16px; }
-  .row:last-of-type { margin-bottom: 20px; }
-  label {
-    display: block;
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 6px;
-  }
-  input, textarea {
-    width: 100%;
-    padding: 11px 13px;
-    font: inherit;
-    color: var(--ink);
-    background: var(--field);
-    border: 1px solid var(--rule);
-    border-radius: 9px;
-  }
-  input:focus, textarea:focus {
-    outline: 2px solid var(--red);
-    outline-offset: 1px;
-    border-color: transparent;
-  }
-  textarea { min-height: 150px; resize: vertical; }
-  button {
-    font: inherit;
-    font-weight: 600;
-    color: var(--paper);
-    background: var(--red);
-    border: 0;
-    border-radius: 9px;
-    padding: 12px 22px;
-    cursor: pointer;
-  }
-  button:hover { background: var(--red-dark); }
-  button[disabled] { opacity: 0.55; cursor: default; }
-  .hp {
-    position: absolute;
-    left: -9999px;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-  }
-  #status {
-    margin: 14px 0 0;
-    font-size: 15px;
-    min-height: 1.4em;
-  }
-  #status.ok { color: var(--ok); }
-  #status.bad { color: var(--bad); }
-
-  footer {
-    border-top: 1px solid var(--rule);
-    margin-top: 56px;
-    padding-top: 20px;
-    color: var(--muted);
-    font-size: 15px;
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
@@ -168,24 +49,15 @@
     <li><strong>Does it need an internet connection?</strong> No. The app makes no network requests at all.</li>
   </ul>
 
-  <h2>Privacy Policy</h2>
+  <h2>Privacy</h2>
   <p>
-    My Campaign Journal does not collect, store or share any personal data.
+    My Campaign Journal collects nothing: no account, no analytics, no advertising, no network
+    connections. Your notes, drawings and PDFs stay on your device. The form above is the one
+    exception, and it belongs to this website rather than the app — what you type there is
+    delivered to the developer so your message can be answered.
   </p>
   <p>
-    All notes, drawings, images and PDF files you create or import stay on your device
-    (and in your device backups, if you use them). The app has no accounts, no analytics,
-    no advertising, and makes no network connections. Nothing you write is sent anywhere.
-  </p>
-  <p class="note">
-    Because no data leaves your device, there is nothing for us to access, correct or delete
-    on your behalf. Removing the app removes its data with it, so export anything you want to keep first.
-  </p>
-  <p>
-    The form on this page is the one exception, and it is part of this website rather than the app:
-    the name, email address and message you type are delivered to the developer by
-    <a href="https://web3forms.com/privacy" rel="noopener">Web3Forms</a>. They are used to answer you
-    and nothing else — no mailing list, no sharing with anyone.
+    The full <a href="privacy/">Privacy Policy</a> spells all of that out.
   </p>
 
   <footer>
